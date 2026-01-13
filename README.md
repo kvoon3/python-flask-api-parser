@@ -12,13 +12,6 @@ A tool for analyzing Flask-RESTful applications using Python's Abstract Syntax T
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd python-ast-router
-```
-
-2. Create a virtual environment and install dependencies:
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
