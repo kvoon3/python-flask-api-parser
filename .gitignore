@@ -149,3 +149,6 @@ Thumbs.db
 # Project specific
 routes.json
 *.json.bak
+
+# Snapshots (syrupy)
+__snapshots__/

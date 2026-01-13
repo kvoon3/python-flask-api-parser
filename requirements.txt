@@ -1,0 +1,2 @@
+pytest>=8.0.0
+inline-snapshot[black]>=0.15.0
