@@ -65,18 +65,22 @@ for resource, url in more_resources:
     result = analyze_file(test_file)
 
     assert result == snapshot({
-        'file': str(test_file),
-        'flask_restful_imports': ['Api', 'Resource'],
-        'api_instance': {'var_name': 'api', 'app_arg': 'app'},
-        'resources': [
-            {'name': 'UserResource', 'methods': ['get', 'post']},
-            {'name': 'ProductResource', 'methods': ['get', 'post']},
-            {'name': 'OrderResource', 'methods': ['get', 'put']},
-        ],
-        'routes': [
-            {'resource': 'UserResource', 'path': "'/users'"},
-            {'resource': 'ProductResource', 'path': "'/api/v1/products'"},
-            {'resource': 'OrderResource', 'path': "'/api/v1/orders'"},
-            {'resource': 'UserResource', 'path': "'/api/v2/users'", 'endpoint': "'v2_users'"},
-        ]
-    })
+    "file": "/private/var/folders/xv/1jph5b9s0295tw5n_f6spjl00000gp/T/pytest-of-kvoon/pytest-11/test_flask_restful_analysis0/flask_app.py",
+    "flask_restful_imports": ["Api", "Resource"],
+    "api_instance": {"var_name": "api", "app_arg": "app"},
+    "resources": [
+        {"name": "UserResource", "methods": ["get", "post"]},
+        {"name": "ProductResource", "methods": ["get", "post"]},
+        {"name": "OrderResource", "methods": ["get", "put"]},
+    ],
+    "routes": [
+        {"resource": "UserResource", "path": "'/users'"},
+        {"resource": "ProductResource", "path": "'/api/v1/products'"},
+        {"resource": "OrderResource", "path": "'/api/v1/orders'"},
+        {
+            "resource": "UserResource",
+            "path": "'/api/v2/users'",
+            "endpoint": "'v2_users'",
+        },
+    ],
+})
